@@ -40,13 +40,14 @@
     padding: 50px;
     text-align: center;
     color: green;
-    font-family: Oxygen;
+    font-family: Manrope;
+    background-color: #dbdbdb;
   }
   .about-section a {
     font-size: 20pt;
     cursor: pointer;
     padding: 5px;
-    color: #f1f1f1; 
+    color: #333; 
     transition: 0.2s;
   }
   .about-section a:hover {
