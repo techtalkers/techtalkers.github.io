@@ -41,14 +41,14 @@ html {
   text-align: center;
   color: green;
   font-family: Manrope;
-  background-color: #dbdbdb;
-  border-radius: 5px;
+  background-color: transparent;
+  border-bottom: 2px #d3d3d3 solid;
 }
 .about-section a {
   font-size: 20pt;
   cursor: pointer;
   padding: 5px;
-  color: #333; 
+  color: #d3d3d3; 
   transition: 0.2s;
 }
 .about-section a:hover {
