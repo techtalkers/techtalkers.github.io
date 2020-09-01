@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Manrope:wght@300;400;500;600;700;800&family=Oxygen:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Manrope:wght@300;400;500;600;700;800&family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap");
 body {
   font-family: Manrope;
   margin: 0;
@@ -9,7 +10,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 .column {
@@ -24,6 +27,7 @@ html {
   border-radius: 5px;
   margin: 8px;
   padding: 10px;
+  box-shadow: 0px 0.5rem 0rem 0px #777;
 }
 .card a {
   font-size: 20pt;
@@ -42,13 +46,12 @@ html {
   color: green;
   font-family: Manrope;
   background-color: transparent;
-  border-bottom: 2px #d3d3d3 solid;
 }
 .about-section a {
   font-size: 20pt;
   cursor: pointer;
   padding: 5px;
-  color: #d3d3d3; 
+  color: #d3d3d3;
   transition: 0.2s;
 }
 .about-section a:hover {
@@ -58,7 +61,8 @@ html {
   padding: 10px;
 }
 
-.container::after, .row::after {
+.container::after,
+.row::after {
   content: "";
   clear: both;
   display: table;
@@ -66,7 +70,7 @@ html {
 
 .title {
   color: grey;
-} 
+}
 .button:hover {
   background-color: #555;
 }
@@ -80,4 +84,61 @@ html {
 #nohover {
   color: green;
   cursor: text;
+}
+h1 {
+  font-family: "Aleo";
+  color: white;
+  font-weight: 400;
+  font-size: 3rem;
+}
+h1 span {
+  color: green;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 8px;
+}
+
+hr {
+  color: white;
+  width: 90%;
+  text-align: center;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+footer {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  display: flex;
+  vertical-align: middle;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  font-size: 1.25rem;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+}
+#footer-hr {
+  margin-bottom: 0.5rem;
+}
+footer a:hover {
+  color: green;
+}
+#footer-separator {
+  font-size: 2rem;
+  margin-right: 0.1rem;
+  margin-left: 0.3rem;
 }
