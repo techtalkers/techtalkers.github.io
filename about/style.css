@@ -99,20 +99,30 @@ h1 span {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: black;
+  background: #333;
 }
 ::-webkit-scrollbar-thumb {
-  background: green;
+  /* background: green; */
+  background: #888;
   border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  /* background: rgb(1, 112, 1); */
+  background: #777;
+}
+::-webkit-scrollbar-thumb:active {
+  /* background: rgb(1, 92, 1); */
+  background: #666;
 }
 
 hr {
   color: white;
+  background: white;
   width: 90%;
   text-align: center;
   margin-top: -1rem;
   margin-bottom: 2rem;
-  border-radius: 1rem;
+  border-radius: 5rem;
 }
 
 footer {
@@ -141,4 +151,63 @@ footer a:hover {
   font-size: 2rem;
   margin-right: 0.1rem;
   margin-left: 0.3rem;
+}
+
+.signup {
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+  background: rgb(4, 146, 4);
+  padding: 2rem;
+  padding-bottom: 4rem;
+  clip-path: polygon(0 10%, 100% 2%, 100% 90%, 0 100%);
+}
+
+.signup h2 {
+  font-family: "Aleo";
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.signup h4 {
+  font-size: 1.2rem;
+  margin-top: 0px;
+}
+
+.btn > button {
+  font-family: Manrope;
+  border-radius: 5px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  color: black;
+  padding: 0.3rem 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.35s ease-out;
+  cursor: pointer;
+}
+
+.btn > button:hover > * {
+  transition: all 0.45s ease-out;
+}
+
+.btn > button:hover {
+  color: white;
+  background-position: left bottom;
+}
+
+.btn > button:hover > * {
+  color: white;
+}
+
+.btn > button:focus {
+  outline: none;
+}
+
+.fa-paper-plane {
+  margin-right: 0.5rem;
 }
